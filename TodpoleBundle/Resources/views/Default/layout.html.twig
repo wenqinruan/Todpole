@@ -1,0 +1,23 @@
+{% extends 'TopxiaAdminBundle::layout.html.twig' %}
+
+{% set nav = 'app' %}
+
+{% block content %}
+  <div class="col-md-2">
+    {% block sidebar %}
+
+      <div class="panel panel-default">
+        <div class="panel-heading">石破天管理</div>
+        <div class="list-group">
+          <a href="{{ path('todpole_index') }}" class="list-group-item {% if menu == 'base' %}active{% endif %}">基本设置</a>
+        </div>
+
+      </div>
+
+
+    {% endblock %}
+  </div>
+  <div class="col-md-10">
+      {% block main %}{% endblock %}
+  </div>
+{% endblock %}

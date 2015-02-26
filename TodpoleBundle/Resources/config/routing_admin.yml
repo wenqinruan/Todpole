@@ -1,0 +1,3 @@
+todpole_index:
+    path:     /todpole/index
+    defaults: { _controller: TodpoleBundle:Default:index }
